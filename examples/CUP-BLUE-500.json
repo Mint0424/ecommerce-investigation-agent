@@ -1,0 +1,742 @@
+{
+  "schemaVersion": 1,
+  "simulated": true,
+  "executionMode": "deterministic_workflow",
+  "sku": "CUP-BLUE-500",
+  "product": {
+    "sku": "CUP-BLUE-500",
+    "name": "保温杯",
+    "variant": "蓝色 · 500ml",
+    "priceCents": 10000,
+    "costCents": 5000,
+    "fulfillmentCents": 500,
+    "minGrossMargin": 0.2,
+    "maxDailyAdSpendCents": 10000
+  },
+  "asOf": "2026-10-12",
+  "status": "complete",
+  "baseline": {
+    "start": "2026-09-28",
+    "end": "2026-10-04",
+    "days": 7
+  },
+  "recent": {
+    "start": "2026-10-05",
+    "end": "2026-10-11",
+    "days": 7
+  },
+  "metrics": {
+    "baselineUnits": 140,
+    "recentUnits": 60,
+    "unitsChangeRate": -0.5714285714285714,
+    "baselineRevenueCents": 1400000,
+    "recentRevenueCents": 600000,
+    "stockoutHours": 96,
+    "baselineAdCvr": 0.05,
+    "recentAdCvr": 0.02142857142857143,
+    "recentAdRoas": 5.357142857142857
+  },
+  "hypotheses": [
+    {
+      "code": "stockout",
+      "title": "缺货与销量下降同时出现",
+      "interpretation": "supported_hypothesis",
+      "detail": "最近窗口累计不可售 96 小时。缺货可能限制成交，需要进一步核对缺货期间的需求与补货记录；这些数据不单独证明因果。",
+      "evidenceIds": [
+        "sales:8f7fde7ff6b714f0",
+        "sales:808b7ab3d7492314",
+        "inventory:767f92fa7a4ade23"
+      ]
+    },
+    {
+      "code": "ad_conversion_decline",
+      "title": "广告点击转化率下降",
+      "interpretation": "supported_hypothesis",
+      "detail": "广告订单/点击由 5.00% 降至 2.14%；同时存在不可售时段，不能把转化下降独立归因于素材或人群；先核对库存。广告归因收入不等于商品总收入。",
+      "evidenceIds": [
+        "sales:8f7fde7ff6b714f0",
+        "sales:808b7ab3d7492314",
+        "advertising:04385d6e00d369c5",
+        "advertising:f06481f32e32b5e8"
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "kind": "replenish",
+      "title": "核对在途库存并拟定补货方案",
+      "requiresApproval": true,
+      "executed": false,
+      "detail": "先核对需求、交期和库存口径，再由运营批准数量。本系统没有执行补货。"
+    },
+    {
+      "kind": "advertising",
+      "title": "检查广告素材与落地页",
+      "requiresApproval": true,
+      "executed": false,
+      "detail": "先核对人群和转化链路，调整预算需要审批；单日预算上限为 100.00 元。本系统没有调整广告。"
+    }
+  ],
+  "quality": [],
+  "evidence": [
+    {
+      "id": "sales:8f7fde7ff6b714f0",
+      "sourceId": "mock-sales-v1",
+      "table": "sales",
+      "simulated": true,
+      "sku": "CUP-BLUE-500",
+      "refreshedAt": "2026-10-12",
+      "window": {
+        "start": "2026-09-28",
+        "end": "2026-10-04",
+        "days": 7
+      },
+      "rowIds": [
+        "sales:CUP-BLUE-500:2026-09-28",
+        "sales:CUP-BLUE-500:2026-09-29",
+        "sales:CUP-BLUE-500:2026-09-30",
+        "sales:CUP-BLUE-500:2026-10-01",
+        "sales:CUP-BLUE-500:2026-10-02",
+        "sales:CUP-BLUE-500:2026-10-03",
+        "sales:CUP-BLUE-500:2026-10-04"
+      ],
+      "missingDates": [],
+      "quality": [],
+      "rows": [
+        {
+          "id": "sales:CUP-BLUE-500:2026-09-28",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-09-28",
+          "units": 20,
+          "revenueCents": 200000
+        },
+        {
+          "id": "sales:CUP-BLUE-500:2026-09-29",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-09-29",
+          "units": 20,
+          "revenueCents": 200000
+        },
+        {
+          "id": "sales:CUP-BLUE-500:2026-09-30",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-09-30",
+          "units": 20,
+          "revenueCents": 200000
+        },
+        {
+          "id": "sales:CUP-BLUE-500:2026-10-01",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-01",
+          "units": 20,
+          "revenueCents": 200000
+        },
+        {
+          "id": "sales:CUP-BLUE-500:2026-10-02",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-02",
+          "units": 20,
+          "revenueCents": 200000
+        },
+        {
+          "id": "sales:CUP-BLUE-500:2026-10-03",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-03",
+          "units": 20,
+          "revenueCents": 200000
+        },
+        {
+          "id": "sales:CUP-BLUE-500:2026-10-04",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-04",
+          "units": 20,
+          "revenueCents": 200000
+        }
+      ]
+    },
+    {
+      "id": "sales:808b7ab3d7492314",
+      "sourceId": "mock-sales-v1",
+      "table": "sales",
+      "simulated": true,
+      "sku": "CUP-BLUE-500",
+      "refreshedAt": "2026-10-12",
+      "window": {
+        "start": "2026-10-05",
+        "end": "2026-10-11",
+        "days": 7
+      },
+      "rowIds": [
+        "sales:CUP-BLUE-500:2026-10-05",
+        "sales:CUP-BLUE-500:2026-10-06",
+        "sales:CUP-BLUE-500:2026-10-07",
+        "sales:CUP-BLUE-500:2026-10-08",
+        "sales:CUP-BLUE-500:2026-10-09",
+        "sales:CUP-BLUE-500:2026-10-10",
+        "sales:CUP-BLUE-500:2026-10-11"
+      ],
+      "missingDates": [],
+      "quality": [],
+      "rows": [
+        {
+          "id": "sales:CUP-BLUE-500:2026-10-05",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-05",
+          "units": 20,
+          "revenueCents": 200000
+        },
+        {
+          "id": "sales:CUP-BLUE-500:2026-10-06",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-06",
+          "units": 20,
+          "revenueCents": 200000
+        },
+        {
+          "id": "sales:CUP-BLUE-500:2026-10-07",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-07",
+          "units": 20,
+          "revenueCents": 200000
+        },
+        {
+          "id": "sales:CUP-BLUE-500:2026-10-08",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-08",
+          "units": 0,
+          "revenueCents": 0
+        },
+        {
+          "id": "sales:CUP-BLUE-500:2026-10-09",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-09",
+          "units": 0,
+          "revenueCents": 0
+        },
+        {
+          "id": "sales:CUP-BLUE-500:2026-10-10",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-10",
+          "units": 0,
+          "revenueCents": 0
+        },
+        {
+          "id": "sales:CUP-BLUE-500:2026-10-11",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-11",
+          "units": 0,
+          "revenueCents": 0
+        }
+      ]
+    },
+    {
+      "id": "inventory:7ea3e376198a949e",
+      "sourceId": "mock-inventory-v1",
+      "table": "inventory",
+      "simulated": true,
+      "sku": "CUP-BLUE-500",
+      "refreshedAt": "2026-10-12",
+      "window": {
+        "start": "2026-09-28",
+        "end": "2026-10-04",
+        "days": 7
+      },
+      "rowIds": [
+        "inventory:CUP-BLUE-500:2026-09-28",
+        "inventory:CUP-BLUE-500:2026-09-29",
+        "inventory:CUP-BLUE-500:2026-09-30",
+        "inventory:CUP-BLUE-500:2026-10-01",
+        "inventory:CUP-BLUE-500:2026-10-02",
+        "inventory:CUP-BLUE-500:2026-10-03",
+        "inventory:CUP-BLUE-500:2026-10-04"
+      ],
+      "missingDates": [],
+      "quality": [],
+      "rows": [
+        {
+          "id": "inventory:CUP-BLUE-500:2026-09-28",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-09-28",
+          "closingUnits": 200,
+          "availableHours": 24
+        },
+        {
+          "id": "inventory:CUP-BLUE-500:2026-09-29",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-09-29",
+          "closingUnits": 200,
+          "availableHours": 24
+        },
+        {
+          "id": "inventory:CUP-BLUE-500:2026-09-30",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-09-30",
+          "closingUnits": 200,
+          "availableHours": 24
+        },
+        {
+          "id": "inventory:CUP-BLUE-500:2026-10-01",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-01",
+          "closingUnits": 200,
+          "availableHours": 24
+        },
+        {
+          "id": "inventory:CUP-BLUE-500:2026-10-02",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-02",
+          "closingUnits": 200,
+          "availableHours": 24
+        },
+        {
+          "id": "inventory:CUP-BLUE-500:2026-10-03",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-03",
+          "closingUnits": 200,
+          "availableHours": 24
+        },
+        {
+          "id": "inventory:CUP-BLUE-500:2026-10-04",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-04",
+          "closingUnits": 200,
+          "availableHours": 24
+        }
+      ]
+    },
+    {
+      "id": "inventory:767f92fa7a4ade23",
+      "sourceId": "mock-inventory-v1",
+      "table": "inventory",
+      "simulated": true,
+      "sku": "CUP-BLUE-500",
+      "refreshedAt": "2026-10-12",
+      "window": {
+        "start": "2026-10-05",
+        "end": "2026-10-11",
+        "days": 7
+      },
+      "rowIds": [
+        "inventory:CUP-BLUE-500:2026-10-05",
+        "inventory:CUP-BLUE-500:2026-10-06",
+        "inventory:CUP-BLUE-500:2026-10-07",
+        "inventory:CUP-BLUE-500:2026-10-08",
+        "inventory:CUP-BLUE-500:2026-10-09",
+        "inventory:CUP-BLUE-500:2026-10-10",
+        "inventory:CUP-BLUE-500:2026-10-11"
+      ],
+      "missingDates": [],
+      "quality": [],
+      "rows": [
+        {
+          "id": "inventory:CUP-BLUE-500:2026-10-05",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-05",
+          "closingUnits": 200,
+          "availableHours": 24
+        },
+        {
+          "id": "inventory:CUP-BLUE-500:2026-10-06",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-06",
+          "closingUnits": 200,
+          "availableHours": 24
+        },
+        {
+          "id": "inventory:CUP-BLUE-500:2026-10-07",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-07",
+          "closingUnits": 200,
+          "availableHours": 24
+        },
+        {
+          "id": "inventory:CUP-BLUE-500:2026-10-08",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-08",
+          "closingUnits": 0,
+          "availableHours": 0
+        },
+        {
+          "id": "inventory:CUP-BLUE-500:2026-10-09",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-09",
+          "closingUnits": 0,
+          "availableHours": 0
+        },
+        {
+          "id": "inventory:CUP-BLUE-500:2026-10-10",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-10",
+          "closingUnits": 0,
+          "availableHours": 0
+        },
+        {
+          "id": "inventory:CUP-BLUE-500:2026-10-11",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-11",
+          "closingUnits": 0,
+          "availableHours": 0
+        }
+      ]
+    },
+    {
+      "id": "promotions:166baa7b8c72e809",
+      "sourceId": "mock-promotions-v1",
+      "table": "promotions",
+      "simulated": true,
+      "sku": "CUP-BLUE-500",
+      "refreshedAt": "2026-10-12",
+      "window": {
+        "start": "2026-09-28",
+        "end": "2026-10-04",
+        "days": 7
+      },
+      "rowIds": [
+        "promotions:CUP-BLUE-500:2026-09-28",
+        "promotions:CUP-BLUE-500:2026-09-29",
+        "promotions:CUP-BLUE-500:2026-09-30",
+        "promotions:CUP-BLUE-500:2026-10-01",
+        "promotions:CUP-BLUE-500:2026-10-02",
+        "promotions:CUP-BLUE-500:2026-10-03",
+        "promotions:CUP-BLUE-500:2026-10-04"
+      ],
+      "missingDates": [],
+      "quality": [],
+      "rows": [
+        {
+          "id": "promotions:CUP-BLUE-500:2026-09-28",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-09-28",
+          "active": false,
+          "effectivePriceCents": 10000,
+          "campaign": "无促销"
+        },
+        {
+          "id": "promotions:CUP-BLUE-500:2026-09-29",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-09-29",
+          "active": false,
+          "effectivePriceCents": 10000,
+          "campaign": "无促销"
+        },
+        {
+          "id": "promotions:CUP-BLUE-500:2026-09-30",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-09-30",
+          "active": false,
+          "effectivePriceCents": 10000,
+          "campaign": "无促销"
+        },
+        {
+          "id": "promotions:CUP-BLUE-500:2026-10-01",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-01",
+          "active": false,
+          "effectivePriceCents": 10000,
+          "campaign": "无促销"
+        },
+        {
+          "id": "promotions:CUP-BLUE-500:2026-10-02",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-02",
+          "active": false,
+          "effectivePriceCents": 10000,
+          "campaign": "无促销"
+        },
+        {
+          "id": "promotions:CUP-BLUE-500:2026-10-03",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-03",
+          "active": false,
+          "effectivePriceCents": 10000,
+          "campaign": "无促销"
+        },
+        {
+          "id": "promotions:CUP-BLUE-500:2026-10-04",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-04",
+          "active": false,
+          "effectivePriceCents": 10000,
+          "campaign": "无促销"
+        }
+      ]
+    },
+    {
+      "id": "promotions:eb8d79a35361c255",
+      "sourceId": "mock-promotions-v1",
+      "table": "promotions",
+      "simulated": true,
+      "sku": "CUP-BLUE-500",
+      "refreshedAt": "2026-10-12",
+      "window": {
+        "start": "2026-10-05",
+        "end": "2026-10-11",
+        "days": 7
+      },
+      "rowIds": [
+        "promotions:CUP-BLUE-500:2026-10-05",
+        "promotions:CUP-BLUE-500:2026-10-06",
+        "promotions:CUP-BLUE-500:2026-10-07",
+        "promotions:CUP-BLUE-500:2026-10-08",
+        "promotions:CUP-BLUE-500:2026-10-09",
+        "promotions:CUP-BLUE-500:2026-10-10",
+        "promotions:CUP-BLUE-500:2026-10-11"
+      ],
+      "missingDates": [],
+      "quality": [],
+      "rows": [
+        {
+          "id": "promotions:CUP-BLUE-500:2026-10-05",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-05",
+          "active": false,
+          "effectivePriceCents": 10000,
+          "campaign": "无促销"
+        },
+        {
+          "id": "promotions:CUP-BLUE-500:2026-10-06",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-06",
+          "active": false,
+          "effectivePriceCents": 10000,
+          "campaign": "无促销"
+        },
+        {
+          "id": "promotions:CUP-BLUE-500:2026-10-07",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-07",
+          "active": false,
+          "effectivePriceCents": 10000,
+          "campaign": "无促销"
+        },
+        {
+          "id": "promotions:CUP-BLUE-500:2026-10-08",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-08",
+          "active": false,
+          "effectivePriceCents": 10000,
+          "campaign": "无促销"
+        },
+        {
+          "id": "promotions:CUP-BLUE-500:2026-10-09",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-09",
+          "active": false,
+          "effectivePriceCents": 10000,
+          "campaign": "无促销"
+        },
+        {
+          "id": "promotions:CUP-BLUE-500:2026-10-10",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-10",
+          "active": false,
+          "effectivePriceCents": 10000,
+          "campaign": "无促销"
+        },
+        {
+          "id": "promotions:CUP-BLUE-500:2026-10-11",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-11",
+          "active": false,
+          "effectivePriceCents": 10000,
+          "campaign": "无促销"
+        }
+      ]
+    },
+    {
+      "id": "advertising:04385d6e00d369c5",
+      "sourceId": "mock-advertising-v1",
+      "table": "advertising",
+      "simulated": true,
+      "sku": "CUP-BLUE-500",
+      "refreshedAt": "2026-10-12",
+      "window": {
+        "start": "2026-09-28",
+        "end": "2026-10-04",
+        "days": 7
+      },
+      "rowIds": [
+        "advertising:CUP-BLUE-500:2026-09-28",
+        "advertising:CUP-BLUE-500:2026-09-29",
+        "advertising:CUP-BLUE-500:2026-09-30",
+        "advertising:CUP-BLUE-500:2026-10-01",
+        "advertising:CUP-BLUE-500:2026-10-02",
+        "advertising:CUP-BLUE-500:2026-10-03",
+        "advertising:CUP-BLUE-500:2026-10-04"
+      ],
+      "missingDates": [],
+      "quality": [],
+      "rows": [
+        {
+          "id": "advertising:CUP-BLUE-500:2026-09-28",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-09-28",
+          "clicks": 200,
+          "orders": 10,
+          "spendCents": 8000,
+          "attributedRevenueCents": 100000
+        },
+        {
+          "id": "advertising:CUP-BLUE-500:2026-09-29",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-09-29",
+          "clicks": 200,
+          "orders": 10,
+          "spendCents": 8000,
+          "attributedRevenueCents": 100000
+        },
+        {
+          "id": "advertising:CUP-BLUE-500:2026-09-30",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-09-30",
+          "clicks": 200,
+          "orders": 10,
+          "spendCents": 8000,
+          "attributedRevenueCents": 100000
+        },
+        {
+          "id": "advertising:CUP-BLUE-500:2026-10-01",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-01",
+          "clicks": 200,
+          "orders": 10,
+          "spendCents": 8000,
+          "attributedRevenueCents": 100000
+        },
+        {
+          "id": "advertising:CUP-BLUE-500:2026-10-02",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-02",
+          "clicks": 200,
+          "orders": 10,
+          "spendCents": 8000,
+          "attributedRevenueCents": 100000
+        },
+        {
+          "id": "advertising:CUP-BLUE-500:2026-10-03",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-03",
+          "clicks": 200,
+          "orders": 10,
+          "spendCents": 8000,
+          "attributedRevenueCents": 100000
+        },
+        {
+          "id": "advertising:CUP-BLUE-500:2026-10-04",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-04",
+          "clicks": 200,
+          "orders": 10,
+          "spendCents": 8000,
+          "attributedRevenueCents": 100000
+        }
+      ]
+    },
+    {
+      "id": "advertising:f06481f32e32b5e8",
+      "sourceId": "mock-advertising-v1",
+      "table": "advertising",
+      "simulated": true,
+      "sku": "CUP-BLUE-500",
+      "refreshedAt": "2026-10-12",
+      "window": {
+        "start": "2026-10-05",
+        "end": "2026-10-11",
+        "days": 7
+      },
+      "rowIds": [
+        "advertising:CUP-BLUE-500:2026-10-05",
+        "advertising:CUP-BLUE-500:2026-10-06",
+        "advertising:CUP-BLUE-500:2026-10-07",
+        "advertising:CUP-BLUE-500:2026-10-08",
+        "advertising:CUP-BLUE-500:2026-10-09",
+        "advertising:CUP-BLUE-500:2026-10-10",
+        "advertising:CUP-BLUE-500:2026-10-11"
+      ],
+      "missingDates": [],
+      "quality": [],
+      "rows": [
+        {
+          "id": "advertising:CUP-BLUE-500:2026-10-05",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-05",
+          "clicks": 200,
+          "orders": 10,
+          "spendCents": 8000,
+          "attributedRevenueCents": 100000
+        },
+        {
+          "id": "advertising:CUP-BLUE-500:2026-10-06",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-06",
+          "clicks": 200,
+          "orders": 10,
+          "spendCents": 8000,
+          "attributedRevenueCents": 100000
+        },
+        {
+          "id": "advertising:CUP-BLUE-500:2026-10-07",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-07",
+          "clicks": 200,
+          "orders": 10,
+          "spendCents": 8000,
+          "attributedRevenueCents": 100000
+        },
+        {
+          "id": "advertising:CUP-BLUE-500:2026-10-08",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-08",
+          "clicks": 200,
+          "orders": 0,
+          "spendCents": 8000,
+          "attributedRevenueCents": 0
+        },
+        {
+          "id": "advertising:CUP-BLUE-500:2026-10-09",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-09",
+          "clicks": 200,
+          "orders": 0,
+          "spendCents": 8000,
+          "attributedRevenueCents": 0
+        },
+        {
+          "id": "advertising:CUP-BLUE-500:2026-10-10",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-10",
+          "clicks": 200,
+          "orders": 0,
+          "spendCents": 8000,
+          "attributedRevenueCents": 0
+        },
+        {
+          "id": "advertising:CUP-BLUE-500:2026-10-11",
+          "sku": "CUP-BLUE-500",
+          "date": "2026-10-11",
+          "clicks": 200,
+          "orders": 0,
+          "spendCents": 8000,
+          "attributedRevenueCents": 0
+        }
+      ]
+    }
+  ],
+  "review": {
+    "passed": true,
+    "checks": [
+      "指标计算一致",
+      "SKU 与来源证据一致",
+      "假设引用完整",
+      "数据质量与完成状态一致",
+      "业务动作未执行且标明审批"
+    ],
+    "scope": "结构化指标、证据与业务动作边界；不验证真实因果，也不评价任意自然语言。"
+  },
+  "limitations": [
+    "全部为模拟数据，数据时点固定为 2026-10-12",
+    "原因仅为有证据支持的假设，不是已证实因果",
+    "不具备真实 ERP、投放、店铺写入能力",
+    "广告 ROAS 使用归因收入/广告费，不等于利润率"
+  ]
+}
