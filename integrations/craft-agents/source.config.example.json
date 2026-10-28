@@ -1,0 +1,21 @@
+{
+  "id": "ecommerce-data-local-v1",
+  "name": "Ecommerce data (simulated)",
+  "slug": "ecommerce-data",
+  "enabled": true,
+  "provider": "ecommerce-local",
+  "type": "mcp",
+  "icon": "🛍️",
+  "tagline": "Read-only synthetic sales, inventory, promotions and advertising",
+  "mcp": {
+    "transport": "stdio",
+    "command": "/absolute/path/to/bun",
+    "args": [
+      "/absolute/path/to/ecommerce-investigation-agent/src/mcp-server.ts"
+    ],
+    "authType": "none"
+  },
+  "isAuthenticated": true,
+  "createdAt": 0,
+  "updatedAt": 0
+}
