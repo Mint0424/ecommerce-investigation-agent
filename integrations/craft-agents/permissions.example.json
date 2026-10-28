@@ -1,0 +1,8 @@
+{
+  "allowedMcpPatterns": [
+    {
+      "pattern": "(?:list_products|get_product_rules|get_sales|get_inventory|get_promotions|get_advertising|monitor_sales|investigate_sku|review_report)$",
+      "comment": "Only the nine read-only tools implemented by this source"
+    }
+  ]
+}
