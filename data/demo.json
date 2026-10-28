@@ -1,0 +1,3529 @@
+{
+  "schemaVersion": 1,
+  "simulated": true,
+  "asOf": "2026-10-12",
+  "currency": "CNY",
+  "sources": {
+    "sales": {
+      "sourceId": "mock-sales-v1",
+      "refreshedAt": "2026-10-12"
+    },
+    "inventory": {
+      "sourceId": "mock-inventory-v1",
+      "refreshedAt": "2026-10-12"
+    },
+    "promotions": {
+      "sourceId": "mock-promotions-v1",
+      "refreshedAt": "2026-10-12"
+    },
+    "advertising": {
+      "sourceId": "mock-advertising-v1",
+      "refreshedAt": "2026-10-12"
+    }
+  },
+  "products": [
+    {
+      "sku": "CUP-BLUE-500",
+      "name": "保温杯",
+      "variant": "蓝色 · 500ml",
+      "priceCents": 10000,
+      "costCents": 5000,
+      "fulfillmentCents": 500,
+      "minGrossMargin": 0.2,
+      "maxDailyAdSpendCents": 10000
+    },
+    {
+      "sku": "CUP-RED-500",
+      "name": "保温杯",
+      "variant": "红色 · 500ml",
+      "priceCents": 10000,
+      "costCents": 5000,
+      "fulfillmentCents": 500,
+      "minGrossMargin": 0.2,
+      "maxDailyAdSpendCents": 10000
+    },
+    {
+      "sku": "TOWEL-SET-3",
+      "name": "毛巾套装",
+      "variant": "三件装",
+      "priceCents": 10000,
+      "costCents": 5000,
+      "fulfillmentCents": 500,
+      "minGrossMargin": 0.2,
+      "maxDailyAdSpendCents": 10000
+    },
+    {
+      "sku": "SHOES-WHITE-42",
+      "name": "休闲鞋",
+      "variant": "白色 · 42码",
+      "priceCents": 10000,
+      "costCents": 5000,
+      "fulfillmentCents": 500,
+      "minGrossMargin": 0.2,
+      "maxDailyAdSpendCents": 10000
+    },
+    {
+      "sku": "BAG-BLACK",
+      "name": "通勤包",
+      "variant": "黑色",
+      "priceCents": 10000,
+      "costCents": 5000,
+      "fulfillmentCents": 500,
+      "minGrossMargin": 0.2,
+      "maxDailyAdSpendCents": 10000
+    },
+    {
+      "sku": "LAMP-WARM",
+      "name": "台灯",
+      "variant": "暖光",
+      "priceCents": 10000,
+      "costCents": 5000,
+      "fulfillmentCents": 500,
+      "minGrossMargin": 0.2,
+      "maxDailyAdSpendCents": 10000
+    },
+    {
+      "sku": "BOTTLE-GREEN",
+      "name": "运动水壶",
+      "variant": "绿色 · 750ml",
+      "priceCents": 10000,
+      "costCents": 5000,
+      "fulfillmentCents": 500,
+      "minGrossMargin": 0.2,
+      "maxDailyAdSpendCents": 10000
+    },
+    {
+      "sku": "CABLE-USB-C",
+      "name": "充电线",
+      "variant": "USB-C · 1米",
+      "priceCents": 2000,
+      "costCents": 1500,
+      "fulfillmentCents": 300,
+      "minGrossMargin": 0.2,
+      "maxDailyAdSpendCents": 10000
+    }
+  ],
+  "sales": [
+    {
+      "id": "sales:CUP-BLUE-500:2026-09-28",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-09-28",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-BLUE-500:2026-09-29",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-09-29",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-BLUE-500:2026-09-30",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-09-30",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-BLUE-500:2026-10-01",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-01",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-BLUE-500:2026-10-02",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-02",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-BLUE-500:2026-10-03",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-03",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-BLUE-500:2026-10-04",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-04",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-BLUE-500:2026-10-05",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-05",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-BLUE-500:2026-10-06",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-06",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-BLUE-500:2026-10-07",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-07",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-BLUE-500:2026-10-08",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-08",
+      "units": 0,
+      "revenueCents": 0
+    },
+    {
+      "id": "sales:CUP-BLUE-500:2026-10-09",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-09",
+      "units": 0,
+      "revenueCents": 0
+    },
+    {
+      "id": "sales:CUP-BLUE-500:2026-10-10",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-10",
+      "units": 0,
+      "revenueCents": 0
+    },
+    {
+      "id": "sales:CUP-BLUE-500:2026-10-11",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-11",
+      "units": 0,
+      "revenueCents": 0
+    },
+    {
+      "id": "sales:CUP-RED-500:2026-09-28",
+      "sku": "CUP-RED-500",
+      "date": "2026-09-28",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-RED-500:2026-09-29",
+      "sku": "CUP-RED-500",
+      "date": "2026-09-29",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-RED-500:2026-09-30",
+      "sku": "CUP-RED-500",
+      "date": "2026-09-30",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-RED-500:2026-10-01",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-01",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-RED-500:2026-10-02",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-02",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-RED-500:2026-10-03",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-03",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-RED-500:2026-10-04",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-04",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-RED-500:2026-10-05",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-05",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-RED-500:2026-10-06",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-06",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-RED-500:2026-10-07",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-07",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-RED-500:2026-10-08",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-08",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-RED-500:2026-10-09",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-09",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-RED-500:2026-10-10",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-10",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:CUP-RED-500:2026-10-11",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-11",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:TOWEL-SET-3:2026-09-28",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-09-28",
+      "units": 20,
+      "revenueCents": 160000
+    },
+    {
+      "id": "sales:TOWEL-SET-3:2026-09-29",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-09-29",
+      "units": 20,
+      "revenueCents": 160000
+    },
+    {
+      "id": "sales:TOWEL-SET-3:2026-09-30",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-09-30",
+      "units": 20,
+      "revenueCents": 160000
+    },
+    {
+      "id": "sales:TOWEL-SET-3:2026-10-01",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-01",
+      "units": 20,
+      "revenueCents": 160000
+    },
+    {
+      "id": "sales:TOWEL-SET-3:2026-10-02",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-02",
+      "units": 20,
+      "revenueCents": 160000
+    },
+    {
+      "id": "sales:TOWEL-SET-3:2026-10-03",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-03",
+      "units": 20,
+      "revenueCents": 160000
+    },
+    {
+      "id": "sales:TOWEL-SET-3:2026-10-04",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-04",
+      "units": 20,
+      "revenueCents": 160000
+    },
+    {
+      "id": "sales:TOWEL-SET-3:2026-10-05",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-05",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:TOWEL-SET-3:2026-10-06",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-06",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:TOWEL-SET-3:2026-10-07",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-07",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:TOWEL-SET-3:2026-10-08",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-08",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:TOWEL-SET-3:2026-10-09",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-09",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:TOWEL-SET-3:2026-10-10",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-10",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:TOWEL-SET-3:2026-10-11",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-11",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:SHOES-WHITE-42:2026-09-28",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-09-28",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:SHOES-WHITE-42:2026-09-29",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-09-29",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:SHOES-WHITE-42:2026-09-30",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-09-30",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:SHOES-WHITE-42:2026-10-01",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-01",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:SHOES-WHITE-42:2026-10-02",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-02",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:SHOES-WHITE-42:2026-10-03",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-03",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:SHOES-WHITE-42:2026-10-04",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-04",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:SHOES-WHITE-42:2026-10-05",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-05",
+      "units": 10,
+      "revenueCents": 100000
+    },
+    {
+      "id": "sales:SHOES-WHITE-42:2026-10-06",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-06",
+      "units": 10,
+      "revenueCents": 100000
+    },
+    {
+      "id": "sales:SHOES-WHITE-42:2026-10-07",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-07",
+      "units": 10,
+      "revenueCents": 100000
+    },
+    {
+      "id": "sales:SHOES-WHITE-42:2026-10-08",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-08",
+      "units": 10,
+      "revenueCents": 100000
+    },
+    {
+      "id": "sales:SHOES-WHITE-42:2026-10-09",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-09",
+      "units": 10,
+      "revenueCents": 100000
+    },
+    {
+      "id": "sales:SHOES-WHITE-42:2026-10-10",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-10",
+      "units": 10,
+      "revenueCents": 100000
+    },
+    {
+      "id": "sales:SHOES-WHITE-42:2026-10-11",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-11",
+      "units": 10,
+      "revenueCents": 100000
+    },
+    {
+      "id": "sales:BAG-BLACK:2026-09-28",
+      "sku": "BAG-BLACK",
+      "date": "2026-09-28",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:BAG-BLACK:2026-09-29",
+      "sku": "BAG-BLACK",
+      "date": "2026-09-29",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:BAG-BLACK:2026-09-30",
+      "sku": "BAG-BLACK",
+      "date": "2026-09-30",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:BAG-BLACK:2026-10-01",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-01",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:BAG-BLACK:2026-10-02",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-02",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:BAG-BLACK:2026-10-03",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-03",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:BAG-BLACK:2026-10-04",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-04",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:BAG-BLACK:2026-10-05",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-05",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:BAG-BLACK:2026-10-06",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-06",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:BAG-BLACK:2026-10-07",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-07",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:BAG-BLACK:2026-10-08",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-08",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:BAG-BLACK:2026-10-09",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-09",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:BAG-BLACK:2026-10-10",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-10",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:BAG-BLACK:2026-10-11",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-11",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:LAMP-WARM:2026-09-28",
+      "sku": "LAMP-WARM",
+      "date": "2026-09-28",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:LAMP-WARM:2026-09-29",
+      "sku": "LAMP-WARM",
+      "date": "2026-09-29",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:LAMP-WARM:2026-09-30",
+      "sku": "LAMP-WARM",
+      "date": "2026-09-30",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:LAMP-WARM:2026-10-01",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-01",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:LAMP-WARM:2026-10-02",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-02",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:LAMP-WARM:2026-10-03",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-03",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:LAMP-WARM:2026-10-04",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-04",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:LAMP-WARM:2026-10-05",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-05",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:LAMP-WARM:2026-10-06",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-06",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:LAMP-WARM:2026-10-07",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-07",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:LAMP-WARM:2026-10-08",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-08",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:LAMP-WARM:2026-10-09",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-09",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:LAMP-WARM:2026-10-10",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-10",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:LAMP-WARM:2026-10-11",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-11",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:BOTTLE-GREEN:2026-09-28",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-09-28",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:BOTTLE-GREEN:2026-09-29",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-09-29",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:BOTTLE-GREEN:2026-09-30",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-09-30",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:BOTTLE-GREEN:2026-10-01",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-01",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:BOTTLE-GREEN:2026-10-02",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-02",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:BOTTLE-GREEN:2026-10-03",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-03",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:BOTTLE-GREEN:2026-10-04",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-04",
+      "units": 20,
+      "revenueCents": 200000
+    },
+    {
+      "id": "sales:BOTTLE-GREEN:2026-10-05",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-05",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:BOTTLE-GREEN:2026-10-06",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-06",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:BOTTLE-GREEN:2026-10-07",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-07",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:BOTTLE-GREEN:2026-10-08",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-08",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:BOTTLE-GREEN:2026-10-09",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-09",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:BOTTLE-GREEN:2026-10-10",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-10",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:BOTTLE-GREEN:2026-10-11",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-11",
+      "units": 12,
+      "revenueCents": 120000
+    },
+    {
+      "id": "sales:CABLE-USB-C:2026-09-28",
+      "sku": "CABLE-USB-C",
+      "date": "2026-09-28",
+      "units": 20,
+      "revenueCents": 32000
+    },
+    {
+      "id": "sales:CABLE-USB-C:2026-09-29",
+      "sku": "CABLE-USB-C",
+      "date": "2026-09-29",
+      "units": 20,
+      "revenueCents": 32000
+    },
+    {
+      "id": "sales:CABLE-USB-C:2026-09-30",
+      "sku": "CABLE-USB-C",
+      "date": "2026-09-30",
+      "units": 20,
+      "revenueCents": 32000
+    },
+    {
+      "id": "sales:CABLE-USB-C:2026-10-01",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-01",
+      "units": 20,
+      "revenueCents": 32000
+    },
+    {
+      "id": "sales:CABLE-USB-C:2026-10-02",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-02",
+      "units": 20,
+      "revenueCents": 32000
+    },
+    {
+      "id": "sales:CABLE-USB-C:2026-10-03",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-03",
+      "units": 20,
+      "revenueCents": 32000
+    },
+    {
+      "id": "sales:CABLE-USB-C:2026-10-04",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-04",
+      "units": 20,
+      "revenueCents": 32000
+    },
+    {
+      "id": "sales:CABLE-USB-C:2026-10-05",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-05",
+      "units": 12,
+      "revenueCents": 24000
+    },
+    {
+      "id": "sales:CABLE-USB-C:2026-10-06",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-06",
+      "units": 12,
+      "revenueCents": 24000
+    },
+    {
+      "id": "sales:CABLE-USB-C:2026-10-07",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-07",
+      "units": 12,
+      "revenueCents": 24000
+    },
+    {
+      "id": "sales:CABLE-USB-C:2026-10-08",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-08",
+      "units": 12,
+      "revenueCents": 24000
+    },
+    {
+      "id": "sales:CABLE-USB-C:2026-10-09",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-09",
+      "units": 12,
+      "revenueCents": 24000
+    },
+    {
+      "id": "sales:CABLE-USB-C:2026-10-10",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-10",
+      "units": 12,
+      "revenueCents": 24000
+    },
+    {
+      "id": "sales:CABLE-USB-C:2026-10-11",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-11",
+      "units": 12,
+      "revenueCents": 24000
+    }
+  ],
+  "inventory": [
+    {
+      "id": "inventory:CUP-BLUE-500:2026-09-28",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-09-28",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-BLUE-500:2026-09-29",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-09-29",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-BLUE-500:2026-09-30",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-09-30",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-BLUE-500:2026-10-01",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-01",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-BLUE-500:2026-10-02",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-02",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-BLUE-500:2026-10-03",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-03",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-BLUE-500:2026-10-04",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-04",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-BLUE-500:2026-10-05",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-05",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-BLUE-500:2026-10-06",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-06",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-BLUE-500:2026-10-07",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-07",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-BLUE-500:2026-10-08",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-08",
+      "closingUnits": 0,
+      "availableHours": 0
+    },
+    {
+      "id": "inventory:CUP-BLUE-500:2026-10-09",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-09",
+      "closingUnits": 0,
+      "availableHours": 0
+    },
+    {
+      "id": "inventory:CUP-BLUE-500:2026-10-10",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-10",
+      "closingUnits": 0,
+      "availableHours": 0
+    },
+    {
+      "id": "inventory:CUP-BLUE-500:2026-10-11",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-11",
+      "closingUnits": 0,
+      "availableHours": 0
+    },
+    {
+      "id": "inventory:CUP-RED-500:2026-09-28",
+      "sku": "CUP-RED-500",
+      "date": "2026-09-28",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-RED-500:2026-09-29",
+      "sku": "CUP-RED-500",
+      "date": "2026-09-29",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-RED-500:2026-09-30",
+      "sku": "CUP-RED-500",
+      "date": "2026-09-30",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-RED-500:2026-10-01",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-01",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-RED-500:2026-10-02",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-02",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-RED-500:2026-10-03",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-03",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-RED-500:2026-10-04",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-04",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-RED-500:2026-10-05",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-05",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-RED-500:2026-10-06",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-06",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-RED-500:2026-10-07",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-07",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-RED-500:2026-10-08",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-08",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-RED-500:2026-10-09",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-09",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-RED-500:2026-10-10",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-10",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CUP-RED-500:2026-10-11",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-11",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:TOWEL-SET-3:2026-09-28",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-09-28",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:TOWEL-SET-3:2026-09-29",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-09-29",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:TOWEL-SET-3:2026-09-30",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-09-30",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:TOWEL-SET-3:2026-10-01",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-01",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:TOWEL-SET-3:2026-10-02",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-02",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:TOWEL-SET-3:2026-10-03",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-03",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:TOWEL-SET-3:2026-10-04",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-04",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:TOWEL-SET-3:2026-10-05",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-05",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:TOWEL-SET-3:2026-10-06",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-06",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:TOWEL-SET-3:2026-10-07",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-07",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:TOWEL-SET-3:2026-10-08",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-08",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:TOWEL-SET-3:2026-10-09",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-09",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:TOWEL-SET-3:2026-10-10",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-10",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:TOWEL-SET-3:2026-10-11",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-11",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:SHOES-WHITE-42:2026-09-28",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-09-28",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:SHOES-WHITE-42:2026-09-29",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-09-29",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:SHOES-WHITE-42:2026-09-30",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-09-30",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:SHOES-WHITE-42:2026-10-01",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-01",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:SHOES-WHITE-42:2026-10-02",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-02",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:SHOES-WHITE-42:2026-10-03",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-03",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:SHOES-WHITE-42:2026-10-04",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-04",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:SHOES-WHITE-42:2026-10-05",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-05",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:SHOES-WHITE-42:2026-10-06",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-06",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:SHOES-WHITE-42:2026-10-07",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-07",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:SHOES-WHITE-42:2026-10-08",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-08",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:SHOES-WHITE-42:2026-10-09",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-09",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:SHOES-WHITE-42:2026-10-10",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-10",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:SHOES-WHITE-42:2026-10-11",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-11",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BAG-BLACK:2026-09-28",
+      "sku": "BAG-BLACK",
+      "date": "2026-09-28",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BAG-BLACK:2026-09-29",
+      "sku": "BAG-BLACK",
+      "date": "2026-09-29",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BAG-BLACK:2026-09-30",
+      "sku": "BAG-BLACK",
+      "date": "2026-09-30",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BAG-BLACK:2026-10-01",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-01",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BAG-BLACK:2026-10-02",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-02",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BAG-BLACK:2026-10-03",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-03",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BAG-BLACK:2026-10-04",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-04",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BAG-BLACK:2026-10-05",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-05",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BAG-BLACK:2026-10-06",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-06",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BAG-BLACK:2026-10-07",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-07",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BAG-BLACK:2026-10-08",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-08",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:LAMP-WARM:2026-09-28",
+      "sku": "LAMP-WARM",
+      "date": "2026-09-28",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:LAMP-WARM:2026-09-29",
+      "sku": "LAMP-WARM",
+      "date": "2026-09-29",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:LAMP-WARM:2026-09-30",
+      "sku": "LAMP-WARM",
+      "date": "2026-09-30",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:LAMP-WARM:2026-10-01",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-01",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:LAMP-WARM:2026-10-02",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-02",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:LAMP-WARM:2026-10-03",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-03",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:LAMP-WARM:2026-10-04",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-04",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:LAMP-WARM:2026-10-05",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-05",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:LAMP-WARM:2026-10-06",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-06",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:LAMP-WARM:2026-10-07",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-07",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:LAMP-WARM:2026-10-08",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-08",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:LAMP-WARM:2026-10-09",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-09",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:LAMP-WARM:2026-10-10",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-10",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:LAMP-WARM:2026-10-11",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-11",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BOTTLE-GREEN:2026-09-28",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-09-28",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BOTTLE-GREEN:2026-09-29",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-09-29",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BOTTLE-GREEN:2026-09-30",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-09-30",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BOTTLE-GREEN:2026-10-01",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-01",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BOTTLE-GREEN:2026-10-02",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-02",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BOTTLE-GREEN:2026-10-03",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-03",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BOTTLE-GREEN:2026-10-04",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-04",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BOTTLE-GREEN:2026-10-05",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-05",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BOTTLE-GREEN:2026-10-06",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-06",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BOTTLE-GREEN:2026-10-07",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-07",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BOTTLE-GREEN:2026-10-08",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-08",
+      "closingUnits": 200,
+      "availableHours": 0
+    },
+    {
+      "id": "inventory:BOTTLE-GREEN:2026-10-09",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-09",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BOTTLE-GREEN:2026-10-10",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-10",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:BOTTLE-GREEN:2026-10-11",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-11",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CABLE-USB-C:2026-09-28",
+      "sku": "CABLE-USB-C",
+      "date": "2026-09-28",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CABLE-USB-C:2026-09-29",
+      "sku": "CABLE-USB-C",
+      "date": "2026-09-29",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CABLE-USB-C:2026-09-30",
+      "sku": "CABLE-USB-C",
+      "date": "2026-09-30",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CABLE-USB-C:2026-10-01",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-01",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CABLE-USB-C:2026-10-02",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-02",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CABLE-USB-C:2026-10-03",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-03",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CABLE-USB-C:2026-10-04",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-04",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CABLE-USB-C:2026-10-05",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-05",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CABLE-USB-C:2026-10-06",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-06",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CABLE-USB-C:2026-10-07",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-07",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CABLE-USB-C:2026-10-08",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-08",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CABLE-USB-C:2026-10-09",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-09",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CABLE-USB-C:2026-10-10",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-10",
+      "closingUnits": 200,
+      "availableHours": 24
+    },
+    {
+      "id": "inventory:CABLE-USB-C:2026-10-11",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-11",
+      "closingUnits": 200,
+      "availableHours": 24
+    }
+  ],
+  "promotions": [
+    {
+      "id": "promotions:CUP-BLUE-500:2026-09-28",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-09-28",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-BLUE-500:2026-09-29",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-09-29",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-BLUE-500:2026-09-30",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-09-30",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-BLUE-500:2026-10-01",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-01",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-BLUE-500:2026-10-02",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-02",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-BLUE-500:2026-10-03",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-03",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-BLUE-500:2026-10-04",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-04",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-BLUE-500:2026-10-05",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-05",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-BLUE-500:2026-10-06",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-06",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-BLUE-500:2026-10-07",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-07",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-BLUE-500:2026-10-08",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-08",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-BLUE-500:2026-10-09",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-09",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-BLUE-500:2026-10-10",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-10",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-BLUE-500:2026-10-11",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-11",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-RED-500:2026-09-28",
+      "sku": "CUP-RED-500",
+      "date": "2026-09-28",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-RED-500:2026-09-29",
+      "sku": "CUP-RED-500",
+      "date": "2026-09-29",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-RED-500:2026-09-30",
+      "sku": "CUP-RED-500",
+      "date": "2026-09-30",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-RED-500:2026-10-01",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-01",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-RED-500:2026-10-02",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-02",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-RED-500:2026-10-03",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-03",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-RED-500:2026-10-04",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-04",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-RED-500:2026-10-05",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-05",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-RED-500:2026-10-06",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-06",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-RED-500:2026-10-07",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-07",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-RED-500:2026-10-08",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-08",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-RED-500:2026-10-09",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-09",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-RED-500:2026-10-10",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-10",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CUP-RED-500:2026-10-11",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-11",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:TOWEL-SET-3:2026-09-28",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-09-28",
+      "active": true,
+      "effectivePriceCents": 8000,
+      "campaign": "模拟八折促销"
+    },
+    {
+      "id": "promotions:TOWEL-SET-3:2026-09-29",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-09-29",
+      "active": true,
+      "effectivePriceCents": 8000,
+      "campaign": "模拟八折促销"
+    },
+    {
+      "id": "promotions:TOWEL-SET-3:2026-09-30",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-09-30",
+      "active": true,
+      "effectivePriceCents": 8000,
+      "campaign": "模拟八折促销"
+    },
+    {
+      "id": "promotions:TOWEL-SET-3:2026-10-01",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-01",
+      "active": true,
+      "effectivePriceCents": 8000,
+      "campaign": "模拟八折促销"
+    },
+    {
+      "id": "promotions:TOWEL-SET-3:2026-10-02",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-02",
+      "active": true,
+      "effectivePriceCents": 8000,
+      "campaign": "模拟八折促销"
+    },
+    {
+      "id": "promotions:TOWEL-SET-3:2026-10-03",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-03",
+      "active": true,
+      "effectivePriceCents": 8000,
+      "campaign": "模拟八折促销"
+    },
+    {
+      "id": "promotions:TOWEL-SET-3:2026-10-04",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-04",
+      "active": true,
+      "effectivePriceCents": 8000,
+      "campaign": "模拟八折促销"
+    },
+    {
+      "id": "promotions:TOWEL-SET-3:2026-10-05",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-05",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:TOWEL-SET-3:2026-10-06",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-06",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:TOWEL-SET-3:2026-10-07",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-07",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:TOWEL-SET-3:2026-10-08",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-08",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:TOWEL-SET-3:2026-10-09",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-09",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:TOWEL-SET-3:2026-10-10",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-10",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:TOWEL-SET-3:2026-10-11",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-11",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:SHOES-WHITE-42:2026-09-28",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-09-28",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:SHOES-WHITE-42:2026-09-29",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-09-29",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:SHOES-WHITE-42:2026-09-30",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-09-30",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:SHOES-WHITE-42:2026-10-01",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-01",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:SHOES-WHITE-42:2026-10-02",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-02",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:SHOES-WHITE-42:2026-10-03",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-03",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:SHOES-WHITE-42:2026-10-04",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-04",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:SHOES-WHITE-42:2026-10-05",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-05",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:SHOES-WHITE-42:2026-10-06",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-06",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:SHOES-WHITE-42:2026-10-07",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-07",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:SHOES-WHITE-42:2026-10-08",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-08",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:SHOES-WHITE-42:2026-10-09",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-09",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:SHOES-WHITE-42:2026-10-10",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-10",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:SHOES-WHITE-42:2026-10-11",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-11",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BAG-BLACK:2026-09-28",
+      "sku": "BAG-BLACK",
+      "date": "2026-09-28",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BAG-BLACK:2026-09-29",
+      "sku": "BAG-BLACK",
+      "date": "2026-09-29",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BAG-BLACK:2026-09-30",
+      "sku": "BAG-BLACK",
+      "date": "2026-09-30",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BAG-BLACK:2026-10-01",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-01",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BAG-BLACK:2026-10-02",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-02",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BAG-BLACK:2026-10-03",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-03",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BAG-BLACK:2026-10-04",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-04",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BAG-BLACK:2026-10-05",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-05",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BAG-BLACK:2026-10-06",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-06",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BAG-BLACK:2026-10-07",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-07",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BAG-BLACK:2026-10-08",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-08",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BAG-BLACK:2026-10-09",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-09",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BAG-BLACK:2026-10-10",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-10",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BAG-BLACK:2026-10-11",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-11",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:LAMP-WARM:2026-09-28",
+      "sku": "LAMP-WARM",
+      "date": "2026-09-28",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:LAMP-WARM:2026-09-29",
+      "sku": "LAMP-WARM",
+      "date": "2026-09-29",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:LAMP-WARM:2026-09-30",
+      "sku": "LAMP-WARM",
+      "date": "2026-09-30",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:LAMP-WARM:2026-10-01",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-01",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:LAMP-WARM:2026-10-02",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-02",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:LAMP-WARM:2026-10-03",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-03",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:LAMP-WARM:2026-10-04",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-04",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:LAMP-WARM:2026-10-05",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-05",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:LAMP-WARM:2026-10-06",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-06",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:LAMP-WARM:2026-10-07",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-07",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:LAMP-WARM:2026-10-08",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-08",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:LAMP-WARM:2026-10-09",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-09",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:LAMP-WARM:2026-10-10",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-10",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:LAMP-WARM:2026-10-11",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-11",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BOTTLE-GREEN:2026-09-28",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-09-28",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BOTTLE-GREEN:2026-09-29",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-09-29",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BOTTLE-GREEN:2026-09-30",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-09-30",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BOTTLE-GREEN:2026-10-01",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-01",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BOTTLE-GREEN:2026-10-02",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-02",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BOTTLE-GREEN:2026-10-03",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-03",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BOTTLE-GREEN:2026-10-04",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-04",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BOTTLE-GREEN:2026-10-05",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-05",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BOTTLE-GREEN:2026-10-06",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-06",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BOTTLE-GREEN:2026-10-07",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-07",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BOTTLE-GREEN:2026-10-08",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-08",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BOTTLE-GREEN:2026-10-09",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-09",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BOTTLE-GREEN:2026-10-10",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-10",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:BOTTLE-GREEN:2026-10-11",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-11",
+      "active": false,
+      "effectivePriceCents": 10000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CABLE-USB-C:2026-09-28",
+      "sku": "CABLE-USB-C",
+      "date": "2026-09-28",
+      "active": true,
+      "effectivePriceCents": 1600,
+      "campaign": "模拟八折促销"
+    },
+    {
+      "id": "promotions:CABLE-USB-C:2026-09-29",
+      "sku": "CABLE-USB-C",
+      "date": "2026-09-29",
+      "active": true,
+      "effectivePriceCents": 1600,
+      "campaign": "模拟八折促销"
+    },
+    {
+      "id": "promotions:CABLE-USB-C:2026-09-30",
+      "sku": "CABLE-USB-C",
+      "date": "2026-09-30",
+      "active": true,
+      "effectivePriceCents": 1600,
+      "campaign": "模拟八折促销"
+    },
+    {
+      "id": "promotions:CABLE-USB-C:2026-10-01",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-01",
+      "active": true,
+      "effectivePriceCents": 1600,
+      "campaign": "模拟八折促销"
+    },
+    {
+      "id": "promotions:CABLE-USB-C:2026-10-02",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-02",
+      "active": true,
+      "effectivePriceCents": 1600,
+      "campaign": "模拟八折促销"
+    },
+    {
+      "id": "promotions:CABLE-USB-C:2026-10-03",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-03",
+      "active": true,
+      "effectivePriceCents": 1600,
+      "campaign": "模拟八折促销"
+    },
+    {
+      "id": "promotions:CABLE-USB-C:2026-10-04",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-04",
+      "active": true,
+      "effectivePriceCents": 1600,
+      "campaign": "模拟八折促销"
+    },
+    {
+      "id": "promotions:CABLE-USB-C:2026-10-05",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-05",
+      "active": false,
+      "effectivePriceCents": 2000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CABLE-USB-C:2026-10-06",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-06",
+      "active": false,
+      "effectivePriceCents": 2000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CABLE-USB-C:2026-10-07",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-07",
+      "active": false,
+      "effectivePriceCents": 2000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CABLE-USB-C:2026-10-08",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-08",
+      "active": false,
+      "effectivePriceCents": 2000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CABLE-USB-C:2026-10-09",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-09",
+      "active": false,
+      "effectivePriceCents": 2000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CABLE-USB-C:2026-10-10",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-10",
+      "active": false,
+      "effectivePriceCents": 2000,
+      "campaign": "无促销"
+    },
+    {
+      "id": "promotions:CABLE-USB-C:2026-10-11",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-11",
+      "active": false,
+      "effectivePriceCents": 2000,
+      "campaign": "无促销"
+    }
+  ],
+  "advertising": [
+    {
+      "id": "advertising:CUP-BLUE-500:2026-09-28",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-09-28",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-BLUE-500:2026-09-29",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-09-29",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-BLUE-500:2026-09-30",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-09-30",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-BLUE-500:2026-10-01",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-01",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-BLUE-500:2026-10-02",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-02",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-BLUE-500:2026-10-03",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-03",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-BLUE-500:2026-10-04",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-04",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-BLUE-500:2026-10-05",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-05",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-BLUE-500:2026-10-06",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-06",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-BLUE-500:2026-10-07",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-07",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-BLUE-500:2026-10-08",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-08",
+      "clicks": 200,
+      "orders": 0,
+      "spendCents": 8000,
+      "attributedRevenueCents": 0
+    },
+    {
+      "id": "advertising:CUP-BLUE-500:2026-10-09",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-09",
+      "clicks": 200,
+      "orders": 0,
+      "spendCents": 8000,
+      "attributedRevenueCents": 0
+    },
+    {
+      "id": "advertising:CUP-BLUE-500:2026-10-10",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-10",
+      "clicks": 200,
+      "orders": 0,
+      "spendCents": 8000,
+      "attributedRevenueCents": 0
+    },
+    {
+      "id": "advertising:CUP-BLUE-500:2026-10-11",
+      "sku": "CUP-BLUE-500",
+      "date": "2026-10-11",
+      "clicks": 200,
+      "orders": 0,
+      "spendCents": 8000,
+      "attributedRevenueCents": 0
+    },
+    {
+      "id": "advertising:CUP-RED-500:2026-09-28",
+      "sku": "CUP-RED-500",
+      "date": "2026-09-28",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-RED-500:2026-09-29",
+      "sku": "CUP-RED-500",
+      "date": "2026-09-29",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-RED-500:2026-09-30",
+      "sku": "CUP-RED-500",
+      "date": "2026-09-30",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-RED-500:2026-10-01",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-01",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-RED-500:2026-10-02",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-02",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-RED-500:2026-10-03",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-03",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-RED-500:2026-10-04",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-04",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-RED-500:2026-10-05",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-05",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-RED-500:2026-10-06",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-06",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-RED-500:2026-10-07",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-07",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-RED-500:2026-10-08",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-08",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-RED-500:2026-10-09",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-09",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-RED-500:2026-10-10",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-10",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CUP-RED-500:2026-10-11",
+      "sku": "CUP-RED-500",
+      "date": "2026-10-11",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:TOWEL-SET-3:2026-09-28",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-09-28",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 80000
+    },
+    {
+      "id": "advertising:TOWEL-SET-3:2026-09-29",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-09-29",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 80000
+    },
+    {
+      "id": "advertising:TOWEL-SET-3:2026-09-30",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-09-30",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 80000
+    },
+    {
+      "id": "advertising:TOWEL-SET-3:2026-10-01",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-01",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 80000
+    },
+    {
+      "id": "advertising:TOWEL-SET-3:2026-10-02",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-02",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 80000
+    },
+    {
+      "id": "advertising:TOWEL-SET-3:2026-10-03",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-03",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 80000
+    },
+    {
+      "id": "advertising:TOWEL-SET-3:2026-10-04",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-04",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 80000
+    },
+    {
+      "id": "advertising:TOWEL-SET-3:2026-10-05",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-05",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:TOWEL-SET-3:2026-10-06",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-06",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:TOWEL-SET-3:2026-10-07",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-07",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:TOWEL-SET-3:2026-10-08",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-08",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:TOWEL-SET-3:2026-10-09",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-09",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:TOWEL-SET-3:2026-10-10",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-10",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:TOWEL-SET-3:2026-10-11",
+      "sku": "TOWEL-SET-3",
+      "date": "2026-10-11",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:SHOES-WHITE-42:2026-09-28",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-09-28",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:SHOES-WHITE-42:2026-09-29",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-09-29",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:SHOES-WHITE-42:2026-09-30",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-09-30",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:SHOES-WHITE-42:2026-10-01",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-01",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:SHOES-WHITE-42:2026-10-02",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-02",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:SHOES-WHITE-42:2026-10-03",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-03",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:SHOES-WHITE-42:2026-10-04",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-04",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:SHOES-WHITE-42:2026-10-05",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-05",
+      "clicks": 200,
+      "orders": 4,
+      "spendCents": 8000,
+      "attributedRevenueCents": 40000
+    },
+    {
+      "id": "advertising:SHOES-WHITE-42:2026-10-06",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-06",
+      "clicks": 200,
+      "orders": 4,
+      "spendCents": 8000,
+      "attributedRevenueCents": 40000
+    },
+    {
+      "id": "advertising:SHOES-WHITE-42:2026-10-07",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-07",
+      "clicks": 200,
+      "orders": 4,
+      "spendCents": 8000,
+      "attributedRevenueCents": 40000
+    },
+    {
+      "id": "advertising:SHOES-WHITE-42:2026-10-08",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-08",
+      "clicks": 200,
+      "orders": 4,
+      "spendCents": 8000,
+      "attributedRevenueCents": 40000
+    },
+    {
+      "id": "advertising:SHOES-WHITE-42:2026-10-09",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-09",
+      "clicks": 200,
+      "orders": 4,
+      "spendCents": 8000,
+      "attributedRevenueCents": 40000
+    },
+    {
+      "id": "advertising:SHOES-WHITE-42:2026-10-10",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-10",
+      "clicks": 200,
+      "orders": 4,
+      "spendCents": 8000,
+      "attributedRevenueCents": 40000
+    },
+    {
+      "id": "advertising:SHOES-WHITE-42:2026-10-11",
+      "sku": "SHOES-WHITE-42",
+      "date": "2026-10-11",
+      "clicks": 200,
+      "orders": 4,
+      "spendCents": 8000,
+      "attributedRevenueCents": 40000
+    },
+    {
+      "id": "advertising:BAG-BLACK:2026-09-28",
+      "sku": "BAG-BLACK",
+      "date": "2026-09-28",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BAG-BLACK:2026-09-29",
+      "sku": "BAG-BLACK",
+      "date": "2026-09-29",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BAG-BLACK:2026-09-30",
+      "sku": "BAG-BLACK",
+      "date": "2026-09-30",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BAG-BLACK:2026-10-01",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-01",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BAG-BLACK:2026-10-02",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-02",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BAG-BLACK:2026-10-03",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-03",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BAG-BLACK:2026-10-04",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-04",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BAG-BLACK:2026-10-05",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-05",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BAG-BLACK:2026-10-06",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-06",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BAG-BLACK:2026-10-07",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-07",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BAG-BLACK:2026-10-08",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-08",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BAG-BLACK:2026-10-09",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-09",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BAG-BLACK:2026-10-10",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-10",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BAG-BLACK:2026-10-11",
+      "sku": "BAG-BLACK",
+      "date": "2026-10-11",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:LAMP-WARM:2026-09-28",
+      "sku": "LAMP-WARM",
+      "date": "2026-09-28",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:LAMP-WARM:2026-09-29",
+      "sku": "LAMP-WARM",
+      "date": "2026-09-29",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:LAMP-WARM:2026-09-30",
+      "sku": "LAMP-WARM",
+      "date": "2026-09-30",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:LAMP-WARM:2026-10-01",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-01",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:LAMP-WARM:2026-10-02",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-02",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:LAMP-WARM:2026-10-03",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-03",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:LAMP-WARM:2026-10-04",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-04",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:LAMP-WARM:2026-10-05",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-05",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:LAMP-WARM:2026-10-06",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-06",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:LAMP-WARM:2026-10-07",
+      "sku": "LAMP-WARM",
+      "date": "2026-10-07",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BOTTLE-GREEN:2026-09-28",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-09-28",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BOTTLE-GREEN:2026-09-29",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-09-29",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BOTTLE-GREEN:2026-09-30",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-09-30",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BOTTLE-GREEN:2026-10-01",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-01",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BOTTLE-GREEN:2026-10-02",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-02",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BOTTLE-GREEN:2026-10-03",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-03",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BOTTLE-GREEN:2026-10-04",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-04",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BOTTLE-GREEN:2026-10-05",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-05",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BOTTLE-GREEN:2026-10-06",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-06",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BOTTLE-GREEN:2026-10-07",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-07",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BOTTLE-GREEN:2026-10-08",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-08",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BOTTLE-GREEN:2026-10-09",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-09",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BOTTLE-GREEN:2026-10-10",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-10",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:BOTTLE-GREEN:2026-10-11",
+      "sku": "BOTTLE-GREEN",
+      "date": "2026-10-11",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 100000
+    },
+    {
+      "id": "advertising:CABLE-USB-C:2026-09-28",
+      "sku": "CABLE-USB-C",
+      "date": "2026-09-28",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 16000
+    },
+    {
+      "id": "advertising:CABLE-USB-C:2026-09-29",
+      "sku": "CABLE-USB-C",
+      "date": "2026-09-29",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 16000
+    },
+    {
+      "id": "advertising:CABLE-USB-C:2026-09-30",
+      "sku": "CABLE-USB-C",
+      "date": "2026-09-30",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 16000
+    },
+    {
+      "id": "advertising:CABLE-USB-C:2026-10-01",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-01",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 16000
+    },
+    {
+      "id": "advertising:CABLE-USB-C:2026-10-02",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-02",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 16000
+    },
+    {
+      "id": "advertising:CABLE-USB-C:2026-10-03",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-03",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 16000
+    },
+    {
+      "id": "advertising:CABLE-USB-C:2026-10-04",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-04",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 16000
+    },
+    {
+      "id": "advertising:CABLE-USB-C:2026-10-05",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-05",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 20000
+    },
+    {
+      "id": "advertising:CABLE-USB-C:2026-10-06",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-06",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 20000
+    },
+    {
+      "id": "advertising:CABLE-USB-C:2026-10-07",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-07",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 20000
+    },
+    {
+      "id": "advertising:CABLE-USB-C:2026-10-08",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-08",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 20000
+    },
+    {
+      "id": "advertising:CABLE-USB-C:2026-10-09",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-09",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 20000
+    },
+    {
+      "id": "advertising:CABLE-USB-C:2026-10-10",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-10",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 20000
+    },
+    {
+      "id": "advertising:CABLE-USB-C:2026-10-11",
+      "sku": "CABLE-USB-C",
+      "date": "2026-10-11",
+      "clicks": 200,
+      "orders": 10,
+      "spendCents": 8000,
+      "attributedRevenueCents": 20000
+    }
+  ]
+}
